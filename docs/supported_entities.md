@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Uzbekistan
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| UZ_PINFL    | The Uzbekistan Personal Identification Number (PINFL, also PINI) is a 14-digit number: the first digit encodes gender and century of birth (1 to 6), the next six digits encode the date of birth in DDMMYY form, the next three digits are a district and city code, the next three digits are a serial number, and the last digit is a check digit. | Pattern match, context and sanity checks. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |

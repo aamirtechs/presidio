@@ -173,6 +173,11 @@ from .country_specific.us.us_npi_recognizer import UsNpiRecognizer
 from .country_specific.us.us_passport_recognizer import UsPassportRecognizer
 from .country_specific.us.us_ssn_recognizer import UsSsnRecognizer
 
+# Uzbekistan recognizers
+from .country_specific.uzbekistan.uz_pinfl_recognizer import (
+    UzPinflRecognizer,
+)
+
 # Generic recognizers
 from .generic.credit_card_recognizer import CreditCardRecognizer
 from .generic.crypto_recognizer import CryptoRecognizer
@@ -328,4 +333,5 @@ __all__ = [
     "DeBsnrRecognizer",
     "DeVatIdRecognizer",
     "DeFuehrerscheinRecognizer",
+    "UzPinflRecognizer",
 ]
