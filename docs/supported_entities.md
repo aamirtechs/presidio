@@ -172,6 +172,11 @@ For more information, refer to the [adding new recognizers documentation](analyz
 | TR_NATIONAL_ID    | The Turkish National Identification Number (TCKN) is a unique 11-digit number issued to all Turkish citizens. | Pattern match, context and checksum. |
 | TR_LICENSE_PLATE  | Turkish vehicle license plate (plaka): 2-digit province code (01–81), 1–3 letters (A–Z, excluding Q, W, X), and 2–4 digits. Standard civilian format only. Legal basis: KTK Madde 23. | Pattern match, context and province code validation. |
 
+### Ukraine
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| UA_RNOKPP    | The Ukraine individual taxpayer number (RNOKPP) is a 10-digit number: the first five digits encode the holder's date of birth as days from 31 December 1899, the next three digits are a serial number, the ninth digit encodes sex (odd for men, even for women), and the tenth digit is a check digit. | Pattern match, context and sanity checks. |
+
 ### Philippines
 
 | FieldType  | Description                                                                                             | Detection Method                         |

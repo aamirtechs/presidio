@@ -386,6 +386,13 @@ recognizers:
     enabled: false
     country_code: se
 
+  - name: UaRnokppRecognizer
+    supported_languages:
+    - en
+    type: predefined
+    enabled: false
+    country_code: ua
+
   - name: ZaCompanyRegistrationRecognizer
     supported_languages:
     - en
