@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Morocco
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| MA_CNIE    | The Morocco National Identity Card number (CNIE / CIN): 1 to 3 region letters for the issuing office, a 6-digit serial number, and a 2-digit control number. | Pattern match, context and sanity checks. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
