@@ -647,3 +647,9 @@ recognizers:
     type: predefined
     enabled: false
     country_code: ca
+  - name: IdNikRecognizer
+    supported_languages:
+    - en
+    type: predefined
+    enabled: false
+    country_code: id

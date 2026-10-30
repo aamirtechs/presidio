@@ -52,6 +52,9 @@ from .country_specific.india.in_pan_recognizer import InPanRecognizer
 from .country_specific.india.in_passport_recognizer import InPassportRecognizer
 from .country_specific.india.in_voter_recognizer import InVoterRecognizer
 
+# Indonesia recognizers
+from .country_specific.indonesia.id_nik_recognizer import IdNikRecognizer
+
 # Italy recognizers
 from .country_specific.italy.it_driver_license_recognizer import (
     ItDriverLicenseRecognizer,
@@ -328,4 +331,5 @@ __all__ = [
     "DeBsnrRecognizer",
     "DeVatIdRecognizer",
     "DeFuehrerscheinRecognizer",
+    "IdNikRecognizer",
 ]

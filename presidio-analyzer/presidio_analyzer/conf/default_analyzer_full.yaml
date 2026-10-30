@@ -125,6 +125,10 @@ recognizer_registry:
       type: predefined
       enabled: false
 
+    - name: IdNikRecognizer
+      type: predefined
+      enabled: false
+
     - name: CryptoRecognizer
       type: predefined
 

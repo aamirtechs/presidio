@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Indonesia
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| ID_NIK     | The Indonesia National Identity Number (NIK / Nomor Induk Kependudukan): a 16-digit number encoding a 6-digit area code, a 6-digit date of birth (day plus 40 for women), and a 4-digit serial number. | Pattern match, context and sanity checks. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
