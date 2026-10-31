@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Malaysia
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| MY_MYKAD   | The Malaysia National Registration Identity Card number (MyKad number): a 12-digit number encoding a 6-digit date of birth (YYMMDD), a 2-digit place of birth code, a 3-digit serial number, and a gender digit (odd male, even female), written with or without hyphens. | Pattern match, context and sanity checks. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
