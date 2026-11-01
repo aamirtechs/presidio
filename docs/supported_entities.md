@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Vietnam
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| VN_CCCD    | The Vietnam citizen identification number (CCCD, Can cuoc cong dan): a 12-digit number encoding a 3-digit province or city of birth registration code, a gender and century digit (0 male and 1 female born in the 20th century, 2 male and 3 female born in the 21st century), a 2-digit birth year, and a 6-digit random serial, written with or without hyphens. The older 9-digit CMND format is not covered. | Pattern match, context and sanity checks. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
