@@ -178,6 +178,11 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Chile
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| CL_RUT     | The Chile Rol Unico Tributario (RUT, also RUN for individuals): a 7 or 8 digit number, a hyphen, and a verification digit (0 to 9 or K), commonly written with dot thousand separators (e.g., 12.345.678-5). The verification digit is validated with the mod-11 algorithm (weights cycling 2 to 7 from right to left, 11 minus remainder, 11 maps to 0, 10 maps to K). | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
