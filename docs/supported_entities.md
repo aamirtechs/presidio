@@ -178,6 +178,11 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Ecuador
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| EC_CEDULA  | The Ecuador Cedula de identidad: a 10 digit national identity card number (e.g., 171430710-3). The first two digits are a province code (01 to 24, plus 30 and 50), the third digit is 0 to 6, digits 4 to 9 are a serial, and the tenth digit is a check digit validated with the mod-10 algorithm (weights alternating 2, 1 from left to right, products above 9 reduced by 9, folded sum a multiple of 10). | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
