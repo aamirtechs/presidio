@@ -125,6 +125,11 @@ recognizer_registry:
       type: predefined
       enabled: false
 
+
+    - name: IrNationalIdRecognizer
+      type: predefined
+      enabled: false
+
     - name: CryptoRecognizer
       type: predefined
 

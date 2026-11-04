@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+
+### Iran
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| IR_NATIONAL_ID  | The Iran Code Melli national code: a 10 digit national identity card number (e.g., 472-171992-2). The first three digits are a geographic or city code, the next six digits are a sequential registration number, and the tenth digit is a check digit validated with the mod-11 algorithm (weights 10 down to 2 applied to the first nine digits, remainder below 2 means the check digit equals the remainder, otherwise the check digit equals 11 minus the remainder). | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
