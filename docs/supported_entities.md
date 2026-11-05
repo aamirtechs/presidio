@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+
+### Argentina
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| AR_CUIT  | The Argentina CUIT/CUIL tax identifier: an 11 digit number (e.g., 20-12345678-6), written plain or grouped as 2 digits, a hyphen, 8 digits, a hyphen, and the check digit. The first two digits are a type prefix (20, 23, 24, 27 for people; 30, 33, 34 for companies), the next eight digits are the identifier, and the eleventh digit is a check digit validated with the mod-11 algorithm (weights 5, 4, 3, 2, 7, 6, 5, 4, 3, 2 applied to the first ten digits; the check digit is 11 minus the remainder, 0 when the remainder is 0, and a remainder of 1 means the combination is never issued). | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |

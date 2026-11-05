@@ -125,6 +125,11 @@ recognizer_registry:
       type: predefined
       enabled: false
 
+
+    - name: ArCuitRecognizer
+      type: predefined
+      enabled: false
+
     - name: CryptoRecognizer
       type: predefined
 

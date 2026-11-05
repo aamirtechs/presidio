@@ -173,6 +173,9 @@ from .country_specific.us.us_npi_recognizer import UsNpiRecognizer
 from .country_specific.us.us_passport_recognizer import UsPassportRecognizer
 from .country_specific.us.us_ssn_recognizer import UsSsnRecognizer
 
+# Argentina recognizers
+from .country_specific.argentina.ar_cuit_recognizer import ArCuitRecognizer
+
 # Generic recognizers
 from .generic.credit_card_recognizer import CreditCardRecognizer
 from .generic.crypto_recognizer import CryptoRecognizer
@@ -310,6 +313,7 @@ __all__ = [
     "AzureOpenAILangExtractRecognizer",
     "BasicLangExtractRecognizer",
     "KrPassportRecognizer",
+    "ArCuitRecognizer",
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
     "PhPassportRecognizer",
