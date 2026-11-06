@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+
+### Mexico
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| MX_CURP  | The Mexico CURP population registry code: an 18 character code (e.g., HEGG560427MVZRRL04), written plain or with single spaces at the segment boundaries. The first four letters are name initials, the next six digits are the birth date as YYMMDD, the eleventh character is the sex (H, M, or X), characters 12 and 13 are the state code from the 33 code catalogue (32 federal entities plus NE for people born abroad; DF is kept for Ciudad de Mexico), characters 14 to 16 are the first internal consonants of the three names, character 17 is the homonymy differentiator (a digit for pre-2000 births, a letter for births since 2000), and character 18 is a check digit validated with the mod-10 algorithm (each of the first 17 characters valued through the CURP alphabet and weighted 18 down to 2; the check digit is (10 minus the sum modulo 10) modulo 10). | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
