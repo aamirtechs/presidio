@@ -647,3 +647,10 @@ recognizers:
     type: predefined
     enabled: false
     country_code: ca
+
+  - name: PeRucRecognizer
+    supported_languages:
+    - en
+    type: predefined
+    enabled: false
+    country_code: pe

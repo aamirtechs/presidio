@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Peru
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| PE_RUC  | The Peru RUC (Registro Unico de Contribuyentes) tax identifier: an 11 digit number (e.g., 20503644968) issued by SUNAT. The first two digits identify the taxpayer type (10 natural person with DNI, 15 natural person with another document, 17 foreigner or others, 20 legal entity), the next eight digits are the identifier, and the eleventh digit is a check digit validated with the mod-11 algorithm (first ten digits weighted 5, 4, 3, 2, 7, 6, 5, 4, 3, 2; the check digit is 11 minus the sum modulo 11, with 10 mapped to 0 and 11 mapped to 1). | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
