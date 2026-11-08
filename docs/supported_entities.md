@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Colombia
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| CO_NIT  | The Colombia NIT (Numero de Identificacion Tributaria) tax identifier: a 9 digit body plus a check digit (e.g., 8909039388, written 890.903.938-8) issued by DIAN. The check digit uses the DIAN mod-11 algorithm (body digits weighted from right to left by 3, 7, 13, 17, 19, 23, 29, 37, 41; a remainder of 0 or 1 gives a check digit equal to the remainder, otherwise 11 minus the remainder). | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |

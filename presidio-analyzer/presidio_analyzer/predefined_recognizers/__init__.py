@@ -173,6 +173,9 @@ from .country_specific.us.us_npi_recognizer import UsNpiRecognizer
 from .country_specific.us.us_passport_recognizer import UsPassportRecognizer
 from .country_specific.us.us_ssn_recognizer import UsSsnRecognizer
 
+# Colombia recognizers
+from .country_specific.colombia.co_nit_recognizer import CoNitRecognizer
+
 # Generic recognizers
 from .generic.credit_card_recognizer import CreditCardRecognizer
 from .generic.crypto_recognizer import CryptoRecognizer
@@ -312,6 +315,7 @@ __all__ = [
     "KrPassportRecognizer",
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
+    "CoNitRecognizer",
     "PhPassportRecognizer",
     "MedicalNERRecognizer",
     # Germany recognizers
