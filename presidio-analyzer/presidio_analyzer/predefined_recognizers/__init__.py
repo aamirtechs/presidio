@@ -14,6 +14,11 @@ from .country_specific.australia.au_tfn_recognizer import AuTfnRecognizer
 from .country_specific.canada.ca_postal_code_recognizer import CaPostalCodeRecognizer
 from .country_specific.canada.ca_sin_recognizer import CaSinRecognizer
 
+# Dominican Republic recognizers
+from .country_specific.dominican_republic.do_cedula_recognizer import (
+    DoCedulaRecognizer,
+)
+
 # Finland recognizers
 from .country_specific.finland.fi_personal_identity_code_recognizer import (
     FiPersonalIdentityCodeRecognizer,
@@ -312,6 +317,7 @@ __all__ = [
     "KrPassportRecognizer",
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
+    "DoCedulaRecognizer",
     "PhPassportRecognizer",
     "MedicalNERRecognizer",
     # Germany recognizers

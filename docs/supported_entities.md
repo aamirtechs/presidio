@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Dominican Republic
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| DO_CEDULA  | The Dominican Republic Cedula de Identidad y Electoral national ID: 11 digits (e.g., 00113918205, written 001-1391820-5) issued by the Junta Central Electoral (JCE). The last digit is a Luhn check digit over the first 10 digits. | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
