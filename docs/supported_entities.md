@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Paraguay
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| PY_RUC  | The Paraguayan Registro Unico de Contribuyentes (RUC) tax identification number: a 6 to 8 digit identifier (the holder's cedula number for individuals, the 50,000,000 series for refugee applicants, the 80,000,000 series for companies) plus one mod-11 check digit, written plain or hyphenated (e.g., 80000519-8 for Telefonica Celular del Paraguay S.A.E.). Issued by the Direccion Nacional de Ingresos Tributarios (DNIT). | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |

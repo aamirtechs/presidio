@@ -76,6 +76,9 @@ from .country_specific.nigeria.ng_vehicle_registration_recognizer import (
     NgVehicleRegistrationRecognizer,
 )
 
+# Paraguay recognizers
+from .country_specific.paraguay.py_ruc_recognizer import PyRucRecognizer
+
 # Philippines recognizers
 from .country_specific.philippines.ph_passport_recognizer import PhPassportRecognizer
 from .country_specific.philippines.ph_tin_recognizer import PhTinRecognizer
@@ -328,4 +331,5 @@ __all__ = [
     "DeBsnrRecognizer",
     "DeVatIdRecognizer",
     "DeFuehrerscheinRecognizer",
+    "PyRucRecognizer",
 ]
