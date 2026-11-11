@@ -152,6 +152,9 @@ from .country_specific.uk.uk_vehicle_registration_recognizer import (
     UkVehicleRegistrationRecognizer,
 )
 
+# Uruguay recognizers
+from .country_specific.uruguay.uy_rut_recognizer import UyRutRecognizer
+
 # US recognizers
 from .country_specific.us.aba_routing_recognizer import AbaRoutingRecognizer
 from .country_specific.us.medical_license_recognizer import MedicalLicenseRecognizer
@@ -312,6 +315,7 @@ __all__ = [
     "KrPassportRecognizer",
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
+    "UyRutRecognizer",
     "PhPassportRecognizer",
     "MedicalNERRecognizer",
     # Germany recognizers

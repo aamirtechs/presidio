@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Uruguay
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| UY_RUT     | The Uruguay Registro Unico Tributario (RUT) tax ID: 12 digits (e.g., 211003420017, written 21-100342-001-7) issued by the Direccion General Impositiva (DGI). The first two digits are the registration number (01 to 22), the next six are the sequence number, the next three are the fixed block 001, and the last digit is a mod-11 check digit. | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
