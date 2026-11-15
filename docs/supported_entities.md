@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Iceland
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| IS_KENNITALA | The Iceland kennitala (national identification number): 10 digits (e.g., 1201743399, written 120174-3399) issued by Registers Iceland. The first six digits are the date of birth (or registration date for legal entities, with 40 added to the day), the next two are random digits, the ninth digit is a mod-11 check digit, and the tenth digit is the century (9 for 1900 to 1999, 0 for 2000 and later). | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |

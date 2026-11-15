@@ -41,6 +41,9 @@ from .country_specific.germany.de_social_security_recognizer import (
 from .country_specific.germany.de_tax_id_recognizer import DeTaxIdRecognizer
 from .country_specific.germany.de_tax_number_recognizer import DeTaxNumberRecognizer
 from .country_specific.germany.de_vat_id_recognizer import DeVatIdRecognizer
+
+# Iceland recognizers
+from .country_specific.iceland.is_kennitala_recognizer import IsKennitalaRecognizer
 from .country_specific.india import (
     InVehicleRegistrationRecognizer,
 )
@@ -312,6 +315,7 @@ __all__ = [
     "KrPassportRecognizer",
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
+    "IsKennitalaRecognizer",
     "PhPassportRecognizer",
     "MedicalNERRecognizer",
     # Germany recognizers
