@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Czech Republic
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| CZ_RC | The Czech birth number (rodne cislo): 10 digits (e.g., 9007203117, written 900720/3117) issued by the Ministry of the Interior. The first six digits are the date of birth, with the month code carrying the sex (01 to 12 men, 51 to 62 women, and from 2004 21 to 32 men and 71 to 82 women), the last four digits are a serial plus check digit, and the whole number must be divisible by 11. | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
