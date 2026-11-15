@@ -84,6 +84,9 @@ from .country_specific.philippines.ph_umid_recognizer import PhUmidRecognizer
 # Poland recognizers
 from .country_specific.poland.pl_pesel_recognizer import PlPeselRecognizer
 
+# Romania recognizers
+from .country_specific.romania.ro_cnp_recognizer import RoCnpRecognizer
+
 # Singapore recognizers
 from .country_specific.singapore.sg_fin_recognizer import SgFinRecognizer
 from .country_specific.singapore.sg_uen_recognizer import SgUenRecognizer
@@ -312,6 +315,7 @@ __all__ = [
     "KrPassportRecognizer",
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
+    "RoCnpRecognizer",
     "PhPassportRecognizer",
     "MedicalNERRecognizer",
     # Germany recognizers

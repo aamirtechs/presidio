@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Romania
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| RO_CNP | The Romanian personal numeric code (Cod Numeric Personal, CNP): 13 digits (e.g., 1960523123457) issued by the General Directorate for Persons' Record. The first digit is the sex and century of birth (1 and 2 for 1900 to 1999, 3 and 4 for 1800 to 1899, 5 and 6 for 2000 to 2099, 7 and 8 for residents), the next six digits are the date of birth, the next two are the county code (01 to 48, 51, 52, and 70 for the new civil status system), the next three are a serial from 001 to 999, and the last digit is a check digit from the 279146358279 weighted sum mod 11, with a remainder of 10 giving 1. | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
