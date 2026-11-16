@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Netherlands
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| NL_BSN | The Dutch citizen service number (Burgerservicenummer, BSN): 9 digits (e.g., 111222333) issued to everyone registered in the Personal Records Database (BRP). The number may begin with one or more zeros, and the last digit is a check digit from the eleven test, the weighted sum with weights 9, 8, 7, 6, 5, 4, 3, 2, -1 divisible by 11. | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
