@@ -14,6 +14,9 @@ from .country_specific.australia.au_tfn_recognizer import AuTfnRecognizer
 from .country_specific.canada.ca_postal_code_recognizer import CaPostalCodeRecognizer
 from .country_specific.canada.ca_sin_recognizer import CaSinRecognizer
 
+# Croatia recognizers
+from .country_specific.croatia.hr_oib_recognizer import HrOibRecognizer
+
 # Finland recognizers
 from .country_specific.finland.fi_personal_identity_code_recognizer import (
     FiPersonalIdentityCodeRecognizer,
@@ -312,6 +315,7 @@ __all__ = [
     "KrPassportRecognizer",
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
+    "HrOibRecognizer",
     "PhPassportRecognizer",
     "MedicalNERRecognizer",
     # Germany recognizers
