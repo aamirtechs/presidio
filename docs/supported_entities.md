@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Slovenia
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| SI_EMSO | The Slovenian unique master citizen number (Enotna maticna stevilka obcana, EMSO): 13 digits (e.g., 0101006500006) encoding the birth date, the region of birth (50 for Slovenia, 51 to 59 since 2024, 05 for foreigners registered in Slovenia), a gender and serial number, and a check digit from the weighted mod 11 check. | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |

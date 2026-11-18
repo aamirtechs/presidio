@@ -88,6 +88,9 @@ from .country_specific.poland.pl_pesel_recognizer import PlPeselRecognizer
 from .country_specific.singapore.sg_fin_recognizer import SgFinRecognizer
 from .country_specific.singapore.sg_uen_recognizer import SgUenRecognizer
 
+# Slovenia recognizers
+from .country_specific.slovenia.si_emso_recognizer import SiEmsoRecognizer
+
 # South Africa recognizers
 from .country_specific.south_africa.za_company_registration_recognizer import (
     ZaCompanyRegistrationRecognizer,
@@ -312,6 +315,7 @@ __all__ = [
     "KrPassportRecognizer",
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
+    "SiEmsoRecognizer",
     "PhPassportRecognizer",
     "MedicalNERRecognizer",
     # Germany recognizers
