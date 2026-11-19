@@ -10,6 +10,9 @@ from .country_specific.australia.au_acn_recognizer import AuAcnRecognizer
 from .country_specific.australia.au_medicare_recognizer import AuMedicareRecognizer
 from .country_specific.australia.au_tfn_recognizer import AuTfnRecognizer
 
+# Bulgaria recognizers
+from .country_specific.bulgaria.bg_egn_recognizer import BgEgnRecognizer
+
 # Canada recognizers
 from .country_specific.canada.ca_postal_code_recognizer import CaPostalCodeRecognizer
 from .country_specific.canada.ca_sin_recognizer import CaSinRecognizer
@@ -312,6 +315,7 @@ __all__ = [
     "KrPassportRecognizer",
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
+    "BgEgnRecognizer",
     "PhPassportRecognizer",
     "MedicalNERRecognizer",
     # Germany recognizers

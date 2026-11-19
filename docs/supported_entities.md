@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Bulgaria
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| BG_EGN | The Bulgarian uniform civil number (Edinen grazhdanski nomer, EGN): 10 digits (e.g., 8032056031) encoding the birth date, with the month code adding 20 for 1800s births and 40 for 2000s births, a birth order number whose third digit is even for males and odd for females, and a check digit from the weighted mod 11 check. | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
