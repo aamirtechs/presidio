@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Greece
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| GR_AFM | The Greek tax identification number (Arithmos Forologikou Mitroou, AFM): 9 digits (e.g., 094259216) issued by the Independent Authority for Public Revenue (AADE) to every taxpayer, also the national part of the Greek VAT number (EL plus the AFM), with the last digit a check digit from the weighted mod 11 mod 10 check with weights 256, 128, 64, 32, 16, 8, 4, 2. | Pattern match, context and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
