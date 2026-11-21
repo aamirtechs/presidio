@@ -101,14 +101,22 @@ class RsJmbgRecognizer(PatternRecognizer):
     144 mod 11 is 1, and 11 minus 1 is 10, so
     the check digit is 0. The recognizer's
     checksum was also cross-checked against
-    python-stdnum si.emso on all fixtures, on
-    2000 random 12 digit bodies (check digit
-    computation), and on 2000 random 13 digit
-    numbers (validation), with zero mismatches
-    in every direction, and against the
-    jmbg-labs Serbian JMBG library on the
-    fixtures whose region it lists, with the two
-    disagreements below as the only exceptions.
+    python-stdnum si.emso on all fixtures and
+    on 2000 random 12 digit bodies (check digit
+    computation), with zero mismatches. Full
+    validation differs from si.emso only in the
+    stricter direction, by design: this
+    recognizer enforces the Serbia region codes
+    and rejects future birth dates, so in a
+    2000 random 13 digit number run, the only
+    disagreements were 5 numbers si.emso
+    accepts and this recognizer rejects (future
+    dates or non-Serbia regions), none the
+    other way. The fixtures were also checked
+    against the jmbg-labs Serbian JMBG library
+    on the fixtures whose region it lists, with
+    the two disagreements below as the only
+    exceptions.
 
     Eight honest caveats. First, the checksum
     alone passes about one time in ten for an
