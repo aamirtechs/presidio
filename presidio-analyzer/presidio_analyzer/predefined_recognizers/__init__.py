@@ -84,6 +84,9 @@ from .country_specific.philippines.ph_umid_recognizer import PhUmidRecognizer
 # Poland recognizers
 from .country_specific.poland.pl_pesel_recognizer import PlPeselRecognizer
 
+# Serbia recognizers
+from .country_specific.serbia.rs_jmbg_recognizer import RsJmbgRecognizer
+
 # Singapore recognizers
 from .country_specific.singapore.sg_fin_recognizer import SgFinRecognizer
 from .country_specific.singapore.sg_uen_recognizer import SgUenRecognizer
@@ -313,6 +316,7 @@ __all__ = [
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
     "PhPassportRecognizer",
+    "RsJmbgRecognizer",
     "MedicalNERRecognizer",
     # Germany recognizers
     "DeTaxIdRecognizer",

@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Serbia
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| RS_JMBG | The Serbian unique master citizen number (Jedinstveni maticni broj gradana, JMBG): 13 digits (e.g., 0101990710008) encoding the birth date (DDMMYYY), the region of birth (70 to 79 Central Serbia, 80 to 89 Vojvodina, 90 to 99 Kosovo, 06 to 08 foreigners in Serbia), a gender and serial number (000 to 499 male, 500 to 999 female), with the last digit a check digit from the weighted mod 11 check with weights 7, 6, 5, 4, 3, 2, 7, 6, 5, 4, 3, 2. The same number system is used in Slovenia (SI_EMSO), Bosnia and Herzegovina, Montenegro and North Macedonia; this recognizer is Serbia specific. | Pattern match, context, date, region and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
