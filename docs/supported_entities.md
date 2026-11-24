@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Latvia
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| LV_PK | The Latvian personal code (personas kods): 11 digits (e.g., 16117519997). Old format DDMMYY-CNNNZ encodes the birth date, the birth century (0 the 1800s, 1 the 1900s, 2 the 2000s), and a three digit serial number, with the last digit a check digit from the mod 11 check with weights 1, 6, 3, 7, 9, 10, 5, 8, 4, 2. New format codes issued from 1 July 2017 start with 3 and a second digit from 2 to 9 and carry no birth date. The code doubles as the Latvian individual tax identification number. | Pattern match, context, date and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
