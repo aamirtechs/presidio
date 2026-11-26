@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Slovakia
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| SK_RODNE_CISLO | The Slovak birth number (rodne cislo): 10 digits (e.g., 9007203117), written plain or in the canonical slashed form YYMMDD/XXXX (e.g., 900720/3117). The first six digits encode the date of birth, with the month code carrying the sex (01 to 12 men, 51 to 62 women, and from 2004 the overflow codes 21 to 32 men and 71 to 82 women); the last four digits are a three digit serial number and a check digit, and the whole 10 digit number must be divisible by 11. People born before 1 January 1954 carry a 9 digit number with no check digit, which is not matched. | Pattern match, context, date and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |
