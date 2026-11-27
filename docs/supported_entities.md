@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Algeria
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| DZ_NIN | The Algerian national identification number (NIN, Numéro d'Identification Nationale): 18 digits (e.g., 100041601000010147). The first two digits carry the sex, the act mention (bis, ter, quater or presumed) and the birth in Algeria or abroad, the next three digits are the last three digits of the birth registration year (000 to 026 for 2000 to 2026, 900 to 999 for 1900 to 1999), the next four digits are the commune or country code of birth registration, the next five digits are the birth act number, the next two digits are the register serial per year, and the last two digits are the control key, whose formula is not published. | Pattern match, context and structure. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |

@@ -5,6 +5,8 @@ from presidio_analyzer.predefined_recognizers.nlp_engine_recognizers.transformer
     TransformersRecognizer,
 )
 
+# Algeria recognizers
+from .country_specific.algeria.dz_nin_recognizer import DzNinRecognizer
 from .country_specific.australia.au_abn_recognizer import AuAbnRecognizer
 from .country_specific.australia.au_acn_recognizer import AuAcnRecognizer
 from .country_specific.australia.au_medicare_recognizer import AuMedicareRecognizer
@@ -312,6 +314,7 @@ __all__ = [
     "KrPassportRecognizer",
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
+    "DzNinRecognizer",
     "PhPassportRecognizer",
     "MedicalNERRecognizer",
     # Germany recognizers
