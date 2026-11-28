@@ -178,6 +178,12 @@ For more information, refer to the [adding new recognizers documentation](analyz
 |------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
 | PH_UMID    | Philippine Unified Multi-Purpose ID (UMID) / Common Reference Number (CRN). 12-digit format (e.g., 0111-1234567-8). Acts as a master ID connecting SSS, GSIS, PhilHealth, and Pag-IBIG. Disabled by default. | Pattern match and context |
 
+### Montenegro
+
+| FieldType  | Description                                                                                             | Detection Method                         |
+|------------|---------------------------------------------------------------------------------------------------------|------------------------------------------|
+| ME_JMBG | The Montenegrin unique master citizen number (JMBG, Jedinstveni maticni broj gradana, locally JMB): 13 digits (e.g., 2003988215003). The first seven digits encode the date of birth (DDMMYYY, with YYY below 800 meaning the 2000s and 800 or above meaning the 1800s), the next two digits are the region of birth (21 to 29 Montenegro, 02 foreigners in Montenegro), the next three digits are a gender and serial number (000 to 499 men, 500 to 999 women), and the last digit is a check digit from the weighted mod 11 check. | Pattern match, context, date, region and checksum. |
+
 ### Germany
 
 | Entity Type | Description | Detection Method |

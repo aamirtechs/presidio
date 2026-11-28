@@ -70,6 +70,9 @@ from .country_specific.korea.kr_frn_recognizer import KrFrnRecognizer
 from .country_specific.korea.kr_passport_recognizer import KrPassportRecognizer
 from .country_specific.korea.kr_rrn_recognizer import KrRrnRecognizer
 
+# Montenegro recognizers
+from .country_specific.montenegro.me_jmbg_recognizer import MeJmbgRecognizer
+
 # Nigeria recognizers
 from .country_specific.nigeria.ng_nin_recognizer import NgNinRecognizer
 from .country_specific.nigeria.ng_vehicle_registration_recognizer import (
@@ -313,6 +316,7 @@ __all__ = [
     "NgNinRecognizer",
     "NgVehicleRegistrationRecognizer",
     "PhPassportRecognizer",
+    "MeJmbgRecognizer",
     "MedicalNERRecognizer",
     # Germany recognizers
     "DeTaxIdRecognizer",

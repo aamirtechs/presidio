@@ -157,5 +157,9 @@ recognizer_registry:
       type: predefined
       enabled: false
 
+    - name: MeJmbgRecognizer
+      type: predefined
+      enabled: false
+
     - name: SpacyRecognizer
       type: predefined
